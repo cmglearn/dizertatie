@@ -1,0 +1,53 @@
+Configuration:
+	Number of phases:
+		- 3
+		- 5
+	Back EMF waveform:
+		- sinusoidal
+		- trapezoidal
+	Rotor type
+		- round
+		- salient pole
+	Mechanical input
+		- Torque Tm
+		- speed w
+		- mechanical rotational port
+
+Model Parameters:
+	1. Stator phase resistance Rs (ohm)
+	2. Armature inductance (H)
+	3. Machine constant
+		- Flux linkage established by magnets (V.s)
+		- Voltage constant (V_peak L-L /krpm)
+		- Torque constant (N*m / A_peak)
+	4. Inertia J (kg*m^2)
+	5. Viscous damping F (N*m*s)
+	6. Pole pairs
+	7. Static friction Tf (N*m)
+	8. Initial conditions
+		- wm (rad/s)
+		- thetam (deg)
+		- ia,ib (A)
+	
+Manufacturer parameters:
+	1. Back EMF waveform
+		- sinusoidal
+		- trapezoidal
+	2. Rotor type
+		- round
+		- salient-pole
+	3. Resistance (ph-ph) R (ohm)
+	4. Inductance (ph-ph) Lab (mH)
+	5. Voltage constant ke 
+	6. Torque constant kt
+	7. Inertia J
+	8. Viscous damping F
+	9. Pole pairs p
+	
+	
+Internet links
+1. Voltage constant
+		- http://control.com/thread/1026207021#1026207021
+		- http://www.gizmology.net/motors.htm
+		- http://electronics.stackexchange.com/questions/33315/understanding-motor-constants-kt-and-kemf-for-comparing-brushless-dc-motors
+		
