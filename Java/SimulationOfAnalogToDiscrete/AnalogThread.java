@@ -18,23 +18,29 @@ public class AnalogThread implements Runnable
 {
     private SampleBuffer sampleBuffer;
     private List<Pair>   data = new ArrayList( );
+    private String       filePath;
 
-    public AnalogThread( SampleBuffer sampleBuffer )
+    public AnalogThread( SampleBuffer sampleBuffer,
+                         String filePath )
     {
         this.sampleBuffer = sampleBuffer;
+        this.filePath = filePath;
     }
 
     @Override
     public void run( )
     {
+        readInput( filePath );
+        // printData( );
         for( Pair p : data )
         {
             sampleBuffer.put( p );
         }
-        sampleBuffer.put( new Pair( -1, -1 ) );
+        sampleBuffer.put( null );
+        //sampleBuffer.put( new Pair( -1, -1 ) );        
     }
 
-    public void readInput( String filePath )
+    private void readInput( String filePath )
     {
         try
         {
@@ -58,7 +64,7 @@ public class AnalogThread implements Runnable
         }
     }
 
-    public void printData( )
+    private void printData( )
     {
         for( Pair p : data )
         {

@@ -39,6 +39,21 @@ public class FileWriter
         }
     }
 
+    public void perform( Pair analog,
+                         Pair discrete )
+    {
+        try
+        {
+            bw.write( analog.getTime( ) + "," + analog.getValue( ) + "," + discrete.getValue( ) );
+            bw.newLine( );
+            bw.flush( );
+        }
+        catch( Exception e )
+        {
+            e.printStackTrace( );
+        }
+    }
+
     public void closeFile( )
     {
         try

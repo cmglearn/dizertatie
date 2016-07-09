@@ -2,14 +2,13 @@ package com.threads;
 
 public class SampleBuffer
 {
-    private Pair value     = new Pair( -2, -2 );
 
-    private int  noOfSamples;
-    private int  sampleIdx = 1;
+    private Pair    value = null;
+    private boolean empty = true;
 
-    public synchronized Pair take( FileWriter fw )
+    public synchronized Pair take( )
     {
-        while( ( sampleIdx <= noOfSamples ) && ( value.getValue( ) != -1 ) )
+        while( empty )
         {
             try
             {
@@ -19,17 +18,21 @@ public class SampleBuffer
             {
             }
         }
-        Pair tmpValue = value;
-        System.out.println( "DiscreteThread: read - " + tmpValue );
-        fw.perform( tmpValue );
-        sampleIdx = 1;
+        // Toggle status.
+        empty = true;
+        Pair tmpValue = null;
+        if( value != null )
+        {
+            tmpValue = new Pair( value.getTime( ), value.getValue( ) );
+        }
+        // Notify producer that status has changed.
         notifyAll( );
         return tmpValue;
     }
 
     public synchronized void put( Pair v )
     {
-        while( sampleIdx > noOfSamples )
+        while( !empty )
         {
             try
             {
@@ -39,22 +42,12 @@ public class SampleBuffer
             {
             }
         }
-
-        putTheValue( v );
-        sampleIdx++;
-        notifyAll( );
-    }
-
-    private void putTheValue( Pair v )
-    {
-        // System.out.println( "Put:" + v );
-        System.out.println( "AnalogThread: put - " + v );
+        // Toggle status.
+        empty = false;
+        // Store message.
         this.value = v;
-    }
-
-    public void setNoOfSamples( int noOfSamples )
-    {
-        this.noOfSamples = noOfSamples;
+        // Notify consumer that status has changed.
+        notifyAll( );
     }
 
     public static class Pair
