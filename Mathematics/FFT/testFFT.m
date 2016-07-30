@@ -1,4 +1,4 @@
-clear all;
+clear; close all; clc
 
 %% create a simple signal with two frequencies
 dt = 0.001;
@@ -14,6 +14,7 @@ Y = fft(x,N);%fft is a fast discrete fourier transform
 PSD = Y.*conj(Y)/N;%power spectrum (how much power is in each freq)
 freq = 1/(dt*N)*(0:N);%creates the X-axis at freqs in Hz
 L = 1:floor(N/2); %only plot the first half of frequencies
+%L = 1:N; %only plot the first half of frequencies
 plot(freq(L),PSD(L))
 title('Power Spectrum');
 xlabel('Frequency (Hz)');
