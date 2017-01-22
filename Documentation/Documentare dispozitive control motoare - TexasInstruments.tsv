@@ -2,11 +2,11 @@ TI-launchpads	Comments
 http://www.ti.com/lsds/ti/tools-software/launchpads/launchpads.page	check 'Performance LaunchPad kits'
 http://www.ti.com/tool/launchxl-f28027f	Picollo
 http://www.ti.com/lsds/ti/tools-software/launchpads/launch-your-design/motor-control/motor-control.page	
-	
-	
-	
-	
-	
+https://www.youtube.com/watch?v=uDQc0O3i8CE	config launchpas + matlab
+https://e2e.ti.com/support/microcontrollers/c2000/f/902/t/396635	launchxl-f28027f vs launchxl-f28027
+http://processors.wiki.ti.com/index.php/C2000_LaunchPad	
+http://fortytwoandnow.blogspot.ro/2012/08/c2000-piccolo-launchpad.html	
+https://www.mathworks.com/matlabcentral/fileexchange/49109-dual-motor-control-with-ti-f28069-launchpad	
 	
 TI-boosterpacks	
 http://www.ti.com/lsds/ti/tools-software/launchpads/boosterpacks/about/about.page	
@@ -30,9 +30,9 @@ https://www.rcgroups.com/forums/showthread.php?200567-BLDC-controller/page189
 InstaSPIN-FOC LaunchPad & BoosterPack - Video	
 https://www.youtube.com/watch?v=y8q8dHi-kf4	
 https://www.youtube.com/watch?v=UrRqN_6aobY	
-	
-	
-	
+https://www.youtube.com/watch?v=F3GHT4H2cSs	
+https://www.youtube.com/watch?v=DOIQwi9R1tE	
+https://www.youtube.com/watch?v=k37fv1sgUCc	
 	
 	
 	
@@ -42,3 +42,50 @@ http://www.protehno.ro/ro/manufacturer/texas-instruments-page606/
 http://ro.farnell.com/texas-instruments/launchxl-f28027f/dev-board-c2000-piccolo-launchpad/dp/2392508	
 http://ro.rsdelivers.com/product/texas-instruments/launchxl-f28027f/instaspin-foc-c2000-piccolo-launchpad/9055040	
 http://ro.mouser.com/ProductDetail/Texas-Instruments/LAUNCHXL-F28027F/?qs=AAveGqk956Epnbi5864gaw%3D%3D	
+	
+	
+	
+	
+	
+Videos	
+https://www.youtube.com/watch?v=ouJUgubNvMM	DRV8301-HC-C2-Kit with InstaSPIN-BLDC - Motor Control Demo
+https://www.youtube.com/watch?v=M9XWL4NDtnU	InstaSPIN-BLDC with the DRV-8312 and 28035 Piccolo
+https://www.youtube.com/watch?v=V1OMvr8ysNQ	Getting Started - InstaSPIN-FOC enabled C2000 LP - Motor BP
+	
+	
+	
+	
+	
+	
+C2000 One-Day Workshop Module	
+https://www.youtube.com/watch?v=lYcB1O3FpOo	
+https://www.youtube.com/watch?v=i8pscTRxGU8	
+https://www.youtube.com/watch?v=oPFz__DdRB0	
+https://www.youtube.com/watch?v=36lMIB-Xh8E	
+	
+	
+	
+	
+	
+LAUNCHXL-F28069M	
+https://www.youtube.com/watch?v=bfUcBFwlW_o	LAUNCHXL-F28069M Board Tour
+http://www.ti.com/tool/LAUNCHXL-f28069M	
+http://www.ti.com/lit/ml/sprui02/sprui02.pdf	
+	
+	
+	
+	
+	
+	
+LAUNCHXL-F28027F	
+https://www.youtube.com/watch?v=Oda_up5abxM	LAUNCHXL-F28027F Board Tour
+http://www.ti.com/lit/ml/sprz413/sprz413.pdf	
+	
+	
+	
+	
+	
+	
+	
+C2000 Real-Time Control Peripherals - Reference Guide	
+http://www.ti.com/lit/ug/spru566l/spru566l.pdf	
